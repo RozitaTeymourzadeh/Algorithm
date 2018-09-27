@@ -7,6 +7,9 @@ import java.util.Arrays;
 
 /**
  * Selection Sort Method
+ * Best Case = O(n^2)
+ * Average Case = O(n^2)
+ * Worst Case = O(1) auxilary
  * 
  * @author rozitateymourzadeh
  *
