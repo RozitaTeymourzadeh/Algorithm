@@ -7,10 +7,9 @@ import java.util.Arrays;
 
 /**
  * Selection Sort Method
- * Best Case = O(n^2)
- * Average Case = O(n^2)
- * Worst Case = O(1) auxilary
- * 
+ * Algorithm		Time Complexity			Space Complexity
+ * 					Best	Average	Worst	Worst
+ * Selection Sort	Ω(n^2)	Θ(n^2)	O(n^2)	O(1)
  * @author rozitateymourzadeh
  *
  */
