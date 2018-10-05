@@ -27,7 +27,7 @@ public class SelectionSort {
 	/*
 	 * Selection Sort Model
 	 * Number of comparison = 45 times = 9+8+7+6+5+4+3+2+1
-	 * Algorithm descriotion: It iterates through the 10 elements and conducts 9 comparison. 
+	 * Algorithm description: It iterates through the 10 elements and conducts 9 comparison. 
 	 * index holds the index of maximum element in one iteration.
 	 * Second iteration starts from outer loop with 9 elements in second iteration. 
 	 * */
