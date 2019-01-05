@@ -1,7 +1,7 @@
 /**
  * 
  */
-package src;
+package sort;
 
 import java.util.Arrays;
 

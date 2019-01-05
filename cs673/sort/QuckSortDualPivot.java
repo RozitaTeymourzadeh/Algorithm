@@ -1,7 +1,7 @@
 /**
  * 
  */
-package src;
+package sort;
 
 /**
  * @author rozitateymourzadeh
