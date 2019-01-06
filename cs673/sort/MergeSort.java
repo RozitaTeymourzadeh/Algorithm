@@ -1,5 +1,11 @@
 package sort;
-
+/**
+ * Merge Sort Method
+ * 
+ * Time complexity = theta(nlogn)
+ * @author Rozita Teymourzadeh
+ *
+ */
 public class MergeSort {
 	
 	public MergeSort() {
