@@ -3,23 +3,25 @@ package sort;
 import java.util.Arrays;
 
 public class QuickSort {
-	int counter = 0;
+
 	/**
 	 * Main method to drive Quick Sort 
 	 * @param args
 	 */
 	public static void main(String[] args) {
-//		int[] list = {7, 132, 3, 42, 17, 78, 99, 23, 27, 61};
+		System.out.println("Quick Sort algorithm:");
+		System.out.println("Time complexity in best case: O(nlogn)");
+		System.out.println("Time complexity in worst case: O(n^2)");
+		int[] list = {7, 132, 3, 42, 17, 78, 99, 23, 27, 61};
 //		int[] list = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 //		int[] list = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
 //		int[] list = {10,10};
-//		System.out.println(Arrays.toString(list));
-//		QuickSort qs = new QuickSort();
-//		qs.quickSort(list);
-//		System.out.println(qs.counter);
-//		System.out.println(Arrays.toString(list));
-		int[] array = {3,8,2,1,4};
-		partitionExam(0,4,array);
+		System.out.println(Arrays.toString(list));
+		QuickSort qs = new QuickSort();
+		qs.quickSort(list);
+		System.out.println(Arrays.toString(list));
+//		int[] array = {3,8,2,1,4};
+//		partitionExam(0,4,array);
 	}
 
 	
@@ -35,7 +37,7 @@ public class QuickSort {
 		return array;
 	}
 
-	private void quickSort(int left, int right, int[] array) {
+	public void quickSort(int left, int right, int[] array) {
 		if (left >= right) {
 			return;
 		}
@@ -43,10 +45,9 @@ public class QuickSort {
 		quickSort(left, index - 1, array);
 		quickSort(index + 1, right, array);
 	}
-
+	/* Partition model 1*/
 	public int partition(int left, int right, int[] array) {
 		int pivotIndex = (int)(Math.random() * (right - left + 1)) + left;
-		this.counter++;
 		int pivot = array[pivotIndex];
 		swap(pivotIndex, right, array);
 		int i = left;
@@ -60,16 +61,17 @@ public class QuickSort {
 				swap(i++, j--, array);
 			}
 		}
+		// i and right refer to index of data to be swapped
 		swap(i, right, array);
 		return i;
 	}
-
+	/* Swap model */
 	private static void swap(int left, int right, int[] array) {
 		int tmp = array[left];
 		array[left] = array[right];
 		array[right] = tmp;
 	}
-	
+	/* Partition model 2*/
 	public static int partitionExam(int low, int high, int[] array) {
 		int pivot = array[low];
 		int i = low;

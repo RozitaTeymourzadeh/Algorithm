@@ -72,6 +72,8 @@ public class MergeSort {
 	
 	public static void main(String[] args) {
 		int arr[] = {9, 3, 7, 5, 6, 4, 8, 2};
+		System.out.println("Merge Sort Algorithm:");
+		System.out.println("Time complexity: O(nlogn)");
 		System.out.println("Unsorted Array is: ");
 		for(int i= 0; i <arr.length ; i++) {
 			System.out.println(arr[i]);
