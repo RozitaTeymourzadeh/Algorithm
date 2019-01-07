@@ -3,7 +3,7 @@
  */
 package dataStructure;
 
-import java.awt.RenderingHints.Key;
+import java.util.Arrays;
 import java.util.HashMap;
 
 /**
@@ -31,6 +31,7 @@ public class HashMapDS {
 
 	public static void main (String[] args) {
 		int[] input = {1, 2, 3, 6, 1, 2, 3};
+		System.out.println("Input array is: " + Arrays.toString(input));
 		HashMap<Integer, Integer> result = new HashMap<Integer, Integer>();
 		HashMapDS hmds = new HashMapDS();
 		result = hmds.findOddValue(input);
